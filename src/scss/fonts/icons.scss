@@ -1,0 +1,68 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+._icon-close:before {
+	content: "\e90c";
+}
+._icon-arrow-menu:before {
+	content: "\e910";
+}
+._icon-instagram:before {
+	content: "\e900";
+}
+._icon-facebook:before {
+	content: "\e901";
+}
+._icon-viber:before {
+	content: "\e902";
+}
+._icon-brief:before {
+	content: "\e903";
+}
+._icon-viber-widget:before {
+	content: "\e904";
+}
+._icon-telegram:before {
+	content: "\e905";
+}
+._icon-phone:before {
+	content: "\e906";
+}
+._icon-mobile:before {
+	content: "\e907";
+}
+._icon-desktop:before {
+	content: "\e908";
+}
+._icon-arrow-portfolio:before {
+	content: "\e909";
+}
+._icon-arrow:before {
+	content: "\e90a";
+}
+._icon-up-arrow:before {
+	content: "\e90b";
+}
+._icon-hexagon:before {
+	content: "\e90d";
+}
+._icon-personal-icon:before {
+	content: "\e90e";
+}
+._icon-scroll:before {
+	content: "\e90f";
+}

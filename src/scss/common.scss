@@ -1,0 +1,226 @@
+//Прелоадер
+.preloader {
+	width: 100%;
+	height: 100%;
+	background: #111111;
+	overflow: hidden;
+	position: fixed;
+	z-index: 100;
+	opacity: 1;
+	pointer-events: none;
+	transition: opacity 2s ease 1.7s;
+	&._active {
+		opacity: 0;
+		position: absolute;
+	}
+}
+
+.loader {
+	display: block;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #ccba96;
+	animation: spin 2s linear infinite;
+}
+
+.loader:before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #ffffff;
+	animation: spin 3s linear infinite;
+}
+
+.loader:after {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #ccba96;
+	animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+//========================================================================================================================================================
+
+//Скролл
+
+.scroll-block {
+	position: absolute;
+	// .scroll-block__content
+	&__content {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		min-height: 590px;
+	}
+	// .scroll-block__scroll
+	&__scroll {
+	}
+	// .scroll-block__image
+	&__image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 26px;
+		color: #ffffff;
+		z-index: 2;
+		animation: line-scroll 4s linear infinite alternate;
+		@media (max-width: 400px) {
+			font-size: 22px;
+		}
+	}
+	// .scroll-block__line
+	&__line {
+		display: flex;
+		border: 1px solid #3e3e3e;
+		background: #3e3e3e;
+		min-height: 75px;
+		position: absolute;
+		top: 10%;
+		left: 7px;
+		z-index: 1;
+		span {
+			position: absolute;
+			top: 100%;
+			left: -8px;
+			writing-mode: vertical-lr;
+			transform: rotate(-180deg);
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 15px;
+			color: #3e3e3e;
+			height: 25px;
+			margin: 8px 0px 0px 0px;
+			z-index: 2;
+			transition: all 0.3s ease 0s;
+		}
+		@media (max-width: 468px) {
+			height: 56px;
+			span {
+				height: 20px;
+				left: -4px;
+				font-size: 8px;
+				line-height: 10px;
+			}
+		}
+		@media (max-width: 400px) {
+			left: 6px;
+			span {
+				left: -5px;
+			}
+		}
+	}
+	// .scroll-block__copy
+	&__copy {
+		position: relative;
+		bottom: 15px;
+		left: 0;
+		span {
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 15px;
+			color: #ffffff;
+			writing-mode: vertical-lr;
+			transform: rotate(-180deg);
+		}
+		@media (max-width: 468px) {
+			span {
+				font-size: 8px;
+				line-height: 10px;
+				left: 3px;
+			}
+		}
+	}
+}
+
+@keyframes line-scroll {
+	0% {
+		top: 10%;
+	}
+	50% {
+		top: calc(10% + 75px - 24px);
+	}
+	100% {
+		top: 10%;
+	}
+}
+
+//========================================================================================================================================================
+
+//Хлебные крошки
+
+.breadcrambs {
+	display: flex;
+	justify-content: center;
+	padding: 43px 0px 0px 0px;
+	// .breadcrambs__container
+	&__container {
+		ul {
+			display: flex;
+			align-items: center;
+			border-bottom: 1px solid #ccba96;
+			min-width: 280px;
+			justify-content: center;
+			padding: 0px 0px 5px 0px;
+		}
+	}
+	// .breadcrambs__item
+	&__item {
+		a {
+			font-weight: 400;
+			font-size: 12px;
+			line-height: math.div(15, 12);
+			color: #4d463a;
+		}
+		span {
+			font-weight: 400;
+			font-size: 12px;
+			line-height: math.div(15, 12);
+			color: #ccba96;
+		}
+	}
+	// .breadcrambs__line
+	&__line {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: math.div(15, 12);
+		color: #ccba96;
+		margin: 0px 3px 0px 3px;
+	}
+}
+
+//========================================================================================================================================================
+
+.title {
+	padding: 25px 0px 0px 0px;
+	margin: 0px 0px 0px 40px;
+	font-weight: 700;
+	font-size: 70px;
+	line-height: math.div(86, 70);
+	text-transform: lowercase;
+	color: #ffffff;
+}

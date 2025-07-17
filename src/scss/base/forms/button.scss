@@ -1,0 +1,101 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	position: relative;
+	padding: 0px 0px;
+	display: flex;
+	justify-content: center;
+	z-index: 1;
+	width: 210px;
+	margin: 0 auto;
+	opacity: 0;
+	transition: all 0.65s ease 0.4s;
+	&._watcher-view {
+		opacity: 1;
+	}
+	span {
+		position: relative;
+		width: 210px;
+		padding: 10px;
+		min-height: 35px;
+		background: #161616;
+		box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
+		transition: all 0.3s ease 0s;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		text-align: center;
+		color: #ffffff;
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 25px;
+			top: 50%;
+			left: -25px;
+			border-bottom: 1px solid #ccba96;
+			z-index: 1;
+			transition: all 0.3s ease 0s;
+		}
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 25px;
+			top: 50%;
+			right: -25px;
+			border-bottom: 1px solid #ccba96;
+			z-index: 1;
+			transition: all 0.3s ease 0s;
+		}
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			span {
+				&::before {
+					content: "";
+					width: 75px;
+					left: -75px;
+				}
+				&::after {
+					content: "";
+					width: 75px;
+					right: -75px;
+				}
+			}
+		}
+	}
+	@media (max-width: 480px) {
+		span {
+			&::before {
+				content: "";
+				width: 15px;
+				left: -15px;
+			}
+			&::after {
+				content: "";
+				width: 15px;
+				right: -15px;
+			}
+		}
+		&:hover {
+			span {
+				width: 100%;
+				&::before {
+					content: "";
+					width: 25px;
+					left: -25px;
+				}
+				&::after {
+					content: "";
+					width: 25px;
+					right: -25px;
+				}
+			}
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+}
