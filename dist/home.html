@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Main</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20250717172901">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js?_v=20250717172901"></script>
+	<!--<link href="http://fonts.cdnfonts.com/css/century-gothic?_v=20250717172901" rel="stylesheet">-->
+</head>
+
+<body>
+	<div class="preloader">
+		<div class="loader">
+		</div>
+	</div>
+	<div class="wrapper">
+		<header data-scroll="100" data-scroll-show="3000" class="header">
+			<div class="header__container">
+				<div class="header__content">
+					<a href="#" class="header__logo">
+						<img src="img/icons/logo.svg" alt="">
+					</a>
+					<div class="header__right">
+						<div class="header-lang">
+							<a href="" class="header-lang__item _active">UA</a>
+							<span>/</span>
+							<a href="" class="header-lang__item">RU</a>
+							<span>/</span>
+							<a href="" class="header-lang__item">EN</a>
+						</div>
+						<a href="" class="header__personal-icon _icon-personal-icon"></a>
+						<nav class="header__menu menu">
+							<button type="button" class="menu__icon icon-menu">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+							<div class="menu__body">
+								<div class="menu__content">
+									<div class="menu__left left-menu">
+										<div class="left-menu__block-one">
+											<div class="left-menu__text">
+												<div class="left-menu__title">Tell us<br>
+													about your idea!
+												</div>
+												<div class="left-menu__subtitle">Fill out the form<br>
+													and calculate the approximate<br>
+													the cost of your project.
+												</div>
+												<div class="left-menu__center-block">
+													<a href="" class="left-menu__brief">fill out the form</a>
+													<a href="" class="left-menu__calculator">online - calculator</a>
+												</div>
+												<div class="left-menu__image">
+													<div id="animation-menu-1"></div>
+												</div>
+											</div>
+										</div>
+										<div class="left-menu__block-two">
+											<div class="left-menu__icon _icon-arrow-menu"></div>
+											<ul>
+												<li><a href="">development</a></li>
+												<li><a href="">promotion and advertising</a></li>
+												<li><a href="">SEO optimization</a></li>
+												<li><a href="">testing</a></li>
+												<li><a href="">design</a></li>
+												<li><a href="">content</a></li>
+												<li><a href="">website support</a></li>
+											</ul>
+											<div class="left-menu__image">
+												<div id="animation-menu-2"></div>
+											</div>
+										</div>
+									</div>
+									<div class="menu__center center-menu">
+										<div class="center-menu__items">
+											<div class="center-menu__column">
+												<div class="item center-menu__link-1 odd-link-1" data-id="1"><span>SERVICES</span></div>
+												<div class="center-menu__block">
+													<a href="#" class="item center-menu__link-2 even-link" data-id="2"><span>contacts</span></a>
+													<a href="#" class="item center-menu__link-3 odd-link" data-id="3"><span>blog</span></a>
+												</div>
+											</div>
+											<div class="center-menu__column-2">
+												<a href="#" class="item center-menu__link-4 even-link-4" data-id="4"><span>jobs</span></a>
+												<div class="center-menu__subblock">
+													<a href="#" class="item center-menu__link-5 odd-link" data-id="5"><span>ABOUT US</span></a>
+													<a href="#" class="item center-menu__link-6 even-link" data-id="6"><span>reviews</span></a>
+													<a href="#" class="item center-menu__link-7 odd-link" data-id="7"><span>PORTFOLIO</span></a>
+												</div>
+											</div>
+										</div>
+										<div class="center-menu__items center-menu--shadow">
+											<div class="center-menu__column">
+												<div class="item center-menu__link-1 odd-link" data-id="1"><span></span></div>
+												<div class="center-menu__block">
+													<a href="#" class="item center-menu__link-2 even-link" data-id="2"><span></span></a>
+													<a href="#" class="item center-menu__link-3 odd-link" data-id="3"><span></span></a>
+												</div>
+											</div>
+											<div class="center-menu__column-2">
+												<a href="#" class="item center-menu__link-4 even-link" data-id="4"><span></span></a>
+												<div class="center-menu__subblock">
+													<a href="#" class="item center-menu__link-5 odd-link" data-id="5"><span></span></a>
+													<a href="#" class="item center-menu__link-6 even-link" data-id="6"><span></span></a>
+													<a href="#" class="item center-menu__link-7 odd-link" data-id="7"><span></span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="menu__right right-menu">
+										<div class="right-menu__forms forms-right-menu">
+											<div class="forms-right-menu__title">to leave a request</div>
+											<form id="form" action="#" class="forms-right-menu__form form-right-menu">
+												<div class="form-right-menu__inputs">
+													<input id="input-1" data-required data-validate tabindex="1" type="text" name="form[]" data-value="" autocomplete="off" class="form-right-menu__input" placeholder="">
+													<label class="form-right-menu__label" for="input-1">
+														<span>Your name</span>
+													</label>
+													<svg class="form-right-menu__graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+														<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+													</svg>
+												</div>
+												<div class="form-right-menu__inputs">
+													<input id="input-1" data-required data-validate tabindex="2" type="tel" name="form[]" data-value="" autocomplete="off" class="form-right-menu__input" placeholder="">
+													<label class="form-right-menu__label" for="input-1">
+														<span>Phone</span>
+													</label>
+													<svg class="form-right-menu__graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+														<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+													</svg>
+												</div>
+												<div class="form-right-menu__inputs">
+													<input id="input-1" data-validate tabindex="3" data-required="email" type="email" name="form[]" data-value="" autocomplete="off" class="form-right-menu__input" placeholder="">
+													<label class="form-right-menu__label" for="input-1">
+														<span>E-mail</span>
+													</label>
+													<svg class="form-right-menu__graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+														<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+													</svg>
+												</div>
+												<div class="form-right-menu__radio radio-form-right-menu">
+													<label class="radio-form-right-menu__inputs">
+														<input data-validate data-required checked data-error="Ошибка" class="radio-form-right-menu__input" type="radio" value="1" name="form[]">
+														<span class="radio-form-right-menu__label">Call me back</span>
+													</label>
+													<label class="radio-form-right-menu__inputs">
+														<input data-validate data-required data-error="Ошибка" class="radio-form-right-menu__input" type="radio" value="2" name="form[]">
+														<span class="radio-form-right-menu__label">Email me</span>
+													</label>
+												</div>
+											</form>
+											<div class="forms-right-menu__button">
+												<button type="submit" class="forms-right-menu__btn">send</button>
+											</div>
+										</div>
+										<div class="right-menu__bottom bottom-right-menu">
+											<div class="bottom-right-menu__contacts">
+												<div class="bottom-right-menu__contact">
+													<div class="bottom-right-menu__text">Contact Us:</div>
+													<div class="bottom-right-menu__icons">
+														<a href="" class="bottom-right-menu__icon _icon-phone"></a>
+														<a href="" class="bottom-right-menu__icon _icon-telegram"></a>
+														<a href="" class="bottom-right-menu__icon _icon-viber"></a>
+													</div>
+												</div>
+												<div class="bottom-right-menu__contact">
+													<div class="bottom-right-menu__text">We're on social media:</div>
+													<div class="bottom-right-menu__icons">
+														<a href="" class="bottom-right-menu__icon _icon-facebook"></a>
+														<a href="" class="bottom-right-menu__icon _icon-instagram"></a>
+													</div>
+												</div>
+											</div>
+											<div class="bottom-right-menu__copy">© «Coder Troop» - digital agency</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__sectors">
+				<div class="sectors__slide main-block">
+					<div id="effect-canvas">
+						<div class="main-block__container">
+							<div class="main-block__content">
+								<div class="main-block__left">
+									<div class="main-block__scroll">
+										<div class="main-block__image _icon-scroll"></div>
+										<div class="main-block__line"><span>scroll</span></div>
+									</div>
+									<div class="main-block__copy"><span>© «Coder Troop Agency»</span></div>
+								</div>
+								<div class="main-block__center">
+									<div class="main-block__logo">
+										<img data-watch data-watch-once class="main-block__fade" src="img/icons/c-logo.svg" alt="">
+										<img data-watch data-watch-once class="main-block__fade" src="img/icons/o-logo.svg" alt="">
+										<img data-watch data-watch-once class="main-block__fade" src="img/icons/d-logo.svg" alt="">
+										<img data-watch data-watch-once class="main-block__fade" src="img/icons/e-logo.svg" alt="">
+										<img data-watch data-watch-once class="main-block__fade" src="img/icons/r-logo.svg" alt="">
+										<span></span>
+										<img data-watch data-watch-once class="main-block__fade" src="img/icons/t-logo.svg" alt="">
+										<img data-watch data-watch-once class="main-block__fade" src="img/icons/r-logo.svg" alt="">
+										<img data-watch data-watch-once class="main-block__fade" src="img/icons/o-logo.svg" alt="">
+										<img data-watch data-watch-once class="main-block__fade" src="img/icons/o-logo.svg" alt="">
+										<img data-watch data-watch-once class="main-block__fade" src="img/icons/p-logo.svg" alt="">
+									</div>
+									<div class="main-block__sublogo">digital agency 25/8/366</div>
+									<div class="main-block__text">(ˈkəʊdər truːp; translated from English as "programming squad»).<br>
+										And yes, our specialists do work hard.
+									</div>
+									<a href="" class="main-block__link"><span>TO LEAVE A REQUEST</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sectors__slide circle">
+					<div class="circle__content">
+						<div data-watch data-watch-once class="circle__title circle__container">click on a category to view</div>
+						<div class="circle__items">
+							<div class="circle__item item-circle">
+								<div class="item-circle__content circle__container">
+									<div class="item-circle__scene">
+										<div data-id="1" class="item-circle__circle circle_1"></div>
+									</div>
+								</div>
+								<div class="item-circle__block item-circle-block">
+									<div class="item-circle-block__items">
+										<div class="item-circle-block__item">
+											<div class="item-circle-block__title">DEVELOPMENT.</div>
+											<div class="item-circle-block__content">
+												<div class="item-circle-block__column">
+													<span>Online <br> store</span>
+													<img src="img/icons/image-1.svg" alt="">
+												</div>
+												<div class="item-circle-block__column">
+													<span>Landing <br> page</span>
+													<img src="img/icons/image-2.svg" alt="">
+												</div>
+												<div class="item-circle-block__column">
+													<span>Corporate <br> site</span>
+													<img src="img/icons/image-3.svg" alt="">
+												</div>
+												<div class="item-circle-block__column">
+													<span>Thematic <br> portal</span>
+													<img src="img/icons/image-4.svg" alt="">
+												</div>
+												<div class="item-circle-block__column">
+													<span>Website - business card, <br> blog</span>
+													<img src="img/icons/image-5.svg" alt="">
+												</div>
+												<div class="item-circle-block__column">
+													<span>Support <br> site</span>
+													<img src="img/icons/image-6.svg" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-circle__content container">
+									<div class="item-circle__scene">
+										<div data-id="2" class="item-circle__circle circle_2"></div>
+									</div>
+								</div>
+								<div class="item-circle__block item-circle-block">
+									<div class="item-circle-block__items">
+										<div class="item-circle-block__item">
+											<div class="item-circle-block__title">Design.</div>
+											<div class="item-circle-block__content">
+												<div class="item-circle-block__column">
+													<span>Online <br> store</span>
+													<img src="img/icons/image-1.svg" alt="">
+												</div>
+												<div class="item-circle-block__column">
+													<span>Landing <br> page</span>
+													<img src="img/icons/image-2.svg" alt="">
+												</div>
+												<div class="item-circle-block__column">
+													<span>Corporate <br> site</span>
+													<img src="img/icons/image-3.svg" alt="">
+												</div>
+												<div class="item-circle-block__column">
+													<span>Thematic <br> portal</span>
+													<img src="img/icons/image-4.svg" alt="">
+												</div>
+												<div class="item-circle-block__column">
+													<span>Website - business card, <br> blog</span>
+													<img src="img/icons/image-5.svg" alt="">
+												</div>
+												<div class="item-circle-block__column">
+													<span>Support <br> site</span>
+													<img src="img/icons/image-6.svg" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-circle__content container">
+									<div class="item-circle__scene">
+										<div data-id="3" class="item-circle__circle circle_3"></div>
+									</div>
+								</div>
+								<div class="item-circle__block item-circle-block">
+									<div class="item-circle-block__items">
+										<div class="item-circle-block__item">
+											<div class="item-circle-block__title">Marketing.</div>
+											<div class="item-circle-block__content">
+												<div class="item-circle-block__column">
+													<span>Online <br> store</span>
+													<img src="img/icons/image-1.svg" alt="">
+												</div>
+												<div class="item-circle-block__column">
+													<span>Landing <br> page</span>
+													<img src="img/icons/image-2.svg" alt="">
+												</div>
+												<div class="item-circle-block__column">
+													<span>Corporate <br> site</span>
+													<img src="img/icons/image-3.svg" alt="">
+												</div>
+												<div class="item-circle-block__column">
+													<span>Thematic <br> portal</span>
+													<img src="img/icons/image-4.svg" alt="">
+												</div>
+												<div class="item-circle-block__column">
+													<span>Website - business card, <br> blog</span>
+													<img src="img/icons/image-5.svg" alt="">
+												</div>
+												<div class="item-circle-block__column">
+													<span>Support <br> site</span>
+													<img src="img/icons/image-6.svg" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sectors__slide steps">
+					<div class="steps__container">
+						<div class="steps__content">
+							<div data-watch data-watch-once class="steps__title _anim-items"><span>10 STEPS TO</span>FINISHED PRODUCT</div>
+							<div class="steps__animate-robot">
+								<div class="animate-robot__item">
+									<div class="animate-robot__image">
+										<div data-watch data-watch-once class="animate-robot__img">
+											<div data-watch data-watch-once class="animate-robot__anim-top">
+												<div data-watch data-watch-once class="anim-top__glow"></div>
+												<div data-watch data-watch-once class="anim-top__glow-1"></div>
+												<div data-watch data-watch-once class="anim-top__glow-2"></div>
+												<div data-watch data-watch-once class="anim-top__glow-3"></div>
+												<div data-watch data-watch-once class="anim-top__glow-4"></div>
+												<div data-watch data-watch-once class="anim-top__glow-5"></div>
+												<div data-watch data-watch-once class="anim-top__glow-6"></div>
+												<div data-watch data-watch-once class="anim-top__glow-7"></div>
+												<div data-watch data-watch-once class="anim-top__glow-8"></div>
+												<div data-watch data-watch-once class="anim-top__glow-9"></div>
+												<div data-watch data-watch-once class="anim-top__glow-10"></div>
+												<div data-watch data-watch-once class="anim-top__glow-11"></div>
+												<div data-watch data-watch-once class="anim-top__glow-12"></div>
+												<div data-watch data-watch-once class="anim-top__glow-13"></div>
+												<div data-watch data-watch-once class="anim-top__glow-14"></div>
+												<div data-watch data-watch-once class="anim-top__glow-15"></div>
+												<div data-watch data-watch-once class="anim-top__glow-16"></div>
+												<div data-watch data-watch-once class="anim-top__glow-17"></div>
+												<div data-watch data-watch-once class="anim-top__glow-18"></div>
+												<div data-watch data-watch-once class="anim-top__glow-19"></div>
+												<div data-watch data-watch-once class="anim-top__glow-20"></div>
+												<div data-watch data-watch-once class="anim-top__glow-21"></div>
+												<div data-watch data-watch-once class="anim-top__glow-22"></div>
+												<div data-watch data-watch-once class="anim-top__glow-23"></div>
+												<div data-watch data-watch-once class="anim-top__glow-24"></div>
+												<div data-watch data-watch-once class="anim-top__glow-25"></div>
+												<div data-watch data-watch-once class="anim-top__glow-26"></div>
+											</div>
+											<div data-watch data-watch-once class="animate-robot__anim-left">
+												<div data-watch data-watch-once class="anim-left__glow-1"></div>
+												<div data-watch data-watch-once class="anim-left__glow-2"></div>
+												<div data-watch data-watch-once class="anim-left__glow-3"></div>
+												<div data-watch data-watch-once class="anim-left__glow-4"></div>
+												<div data-watch data-watch-once class="anim-left__glow-5"></div>
+												<div data-watch data-watch-once class="anim-left__glow-6"></div>
+												<div data-watch data-watch-once class="anim-left__glow-7"></div>
+											</div>
+											<div data-watch data-watch-once class="animate-robot__anim-right">
+												<div data-watch data-watch-once class="anim-right__glow-1"></div>
+												<div data-watch data-watch-once class="anim-right__glow-2"></div>
+												<div data-watch data-watch-once class="anim-right__glow-3"></div>
+												<div data-watch data-watch-once class="anim-right__glow-4"></div>
+												<div data-watch data-watch-once class="anim-right__glow-5"></div>
+												<div data-watch data-watch-once class="anim-right__glow-6"></div>
+												<div data-watch data-watch-once class="anim-right__glow-7"></div>
+											</div>
+											<img data-watch data-watch-once src="img/icons/robot.svg" alt="">
+											<div data-watch data-watch-once class="animate-robot__shadow"></div>
+										</div>
+										<div data-watch data-watch-once class="animate-robot__tippy">
+											Hi! I'm coder Zhora.
+											Hit the button and I'll tell you
+											you how we build and
+											and promote websites, or
+											keep scrolling and check out
+											our work!)
+										</div>
+									</div>
+									<div data-watch data-watch-once class="animate-robot__button"><span>Let's go!</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="steps__translate-sector">
+							<div class="steps__super-sector _active">
+								<div class="steps__svg-path-container">
+									<div class="steps__robots" id="robot">
+										<div class="steps__robots-animate">
+											<img class="steps__robot-front" src="img/icons/robot.svg" alt="">
+											<div class="animate-robot__anim-top-main-robot-path">
+												<div class="anim-top-main-robot-path__glow"></div>
+												<div class="anim-top-main-robot-path__glow-1"></div>
+												<div class="anim-top-main-robot-path__glow-2"></div>
+												<div class="anim-top-main-robot-path__glow-3"></div>
+												<div class="anim-top-main-robot-path__glow-4"></div>
+												<div class="anim-top-main-robot-path__glow-5"></div>
+												<div class="anim-top-main-robot-path__glow-6"></div>
+												<div class="anim-top-main-robot-path__glow-7"></div>
+												<div class="anim-top-main-robot-path__glow-8"></div>
+												<div class="anim-top-main-robot-path__glow-9"></div>
+												<div class="anim-top-main-robot-path__glow-10"></div>
+												<div class="anim-top-main-robot-path__glow-11"></div>
+												<div class="anim-top-main-robot-path__glow-12"></div>
+												<div class="anim-top-main-robot-path__glow-13"></div>
+												<div class="anim-top-main-robot-path__glow-14"></div>
+												<div class="anim-top-main-robot-path__glow-15"></div>
+												<div class="anim-top-main-robot-path__glow-16"></div>
+												<div class="anim-top-main-robot-path__glow-17"></div>
+												<div class="anim-top-main-robot-path__glow-18"></div>
+												<div class="anim-top-main-robot-path__glow-19"></div>
+												<div class="anim-top-main-robot-path__glow-20"></div>
+												<div class="anim-top-main-robot-path__glow-21"></div>
+												<div class="anim-top-main-robot-path__glow-22"></div>
+												<div class="anim-top-main-robot-path__glow-23"></div>
+												<div class="anim-top-main-robot-path__glow-24"></div>
+												<div class="anim-top-main-robot-path__glow-25"></div>
+												<div class="anim-top-main-robot-path__glow-26"></div>
+											</div>
+											<div data-watch data-watch-once class="animate-robot__anim-left">
+												<div data-watch data-watch-once class="anim-left__glow-1"></div>
+												<div data-watch data-watch-once class="anim-left__glow-2"></div>
+												<div data-watch data-watch-once class="anim-left__glow-3"></div>
+												<div data-watch data-watch-once class="anim-left__glow-4"></div>
+												<div data-watch data-watch-once class="anim-left__glow-5"></div>
+												<div data-watch data-watch-once class="anim-left__glow-6"></div>
+												<div data-watch data-watch-once class="anim-left__glow-7"></div>
+											</div>
+											<div data-watch data-watch-once class="animate-robot__anim-right">
+												<div data-watch data-watch-once class="anim-right__glow-1"></div>
+												<div data-watch data-watch-once class="anim-right__glow-2"></div>
+												<div data-watch data-watch-once class="anim-right__glow-3"></div>
+												<div data-watch data-watch-once class="anim-right__glow-4"></div>
+												<div data-watch data-watch-once class="anim-right__glow-5"></div>
+												<div data-watch data-watch-once class="anim-right__glow-6"></div>
+												<div data-watch data-watch-once class="anim-right__glow-7"></div>
+											</div>
+											<div class="animate-robot__shadow-main-robot-path"></div>
+										</div>
+									</div>
+									<div class="steps__robots" id="robot-left">
+										<div class="steps__robots-animate">
+											<img class="steps__robot-left" src="img/icons/robot-left.svg" alt="">
+											<div class="animate-robot__anim-top-robot-path">
+												<div class="anim-top-robot-path__glow"></div>
+												<div class="anim-top-robot-path__glow-1"></div>
+												<div class="anim-top-robot-path__glow-2"></div>
+												<div class="anim-top-robot-path__glow-3"></div>
+												<div class="anim-top-robot-path__glow-4"></div>
+												<div class="anim-top-robot-path__glow-5"></div>
+												<div class="anim-top-robot-path__glow-6"></div>
+												<div class="anim-top-robot-path__glow-7"></div>
+												<div class="anim-top-robot-path__glow-8"></div>
+												<div class="anim-top-robot-path__glow-9"></div>
+												<div class="anim-top-robot-path__glow-10"></div>
+												<div class="anim-top-robot-path__glow-11"></div>
+												<div class="anim-top-robot-path__glow-12"></div>
+												<div class="anim-top-robot-path__glow-13"></div>
+												<div class="anim-top-robot-path__glow-14"></div>
+												<div class="anim-top-robot-path__glow-15"></div>
+												<div class="anim-top-robot-path__glow-16"></div>
+												<div class="anim-top-robot-path__glow-17"></div>
+												<div class="anim-top-robot-path__glow-18"></div>
+												<div class="anim-top-robot-path__glow-19"></div>
+												<div class="anim-top-robot-path__glow-20"></div>
+												<div class="anim-top-robot-path__glow-21"></div>
+												<div class="anim-top-robot-path__glow-22"></div>
+												<div class="anim-top-robot-path__glow-23"></div>
+												<div class="anim-top-robot-path__glow-24"></div>
+												<div class="anim-top-robot-path__glow-25"></div>
+												<div class="anim-top-robot-path__glow-26"></div>
+											</div>
+											<div class="animate-robot__anim-right-robot-path">
+												<div class="anim-right-robot-path__glow-1"></div>
+												<div class="anim-right-robot-path__glow-2"></div>
+												<div class="anim-right-robot-path__glow-3"></div>
+												<div class="anim-right-robot-path__glow-4"></div>
+												<div class="anim-right-robot-path__glow-5"></div>
+												<div class="anim-right-robot-path__glow-6"></div>
+												<div class="anim-right-robot-path__glow-7"></div>
+											</div>
+											<div class="animate-robot__shadow-robot-path"></div>
+										</div>
+									</div>
+									<div class="steps__robots" id="robot-right">
+										<div class="steps__robots-animate">
+											<img class="steps__robot-right" src="img/icons/robot-right.svg" alt="">
+											<div class="animate-robot__anim-top-robot-path">
+												<div class="anim-top-robot-path__glow"></div>
+												<div class="anim-top-robot-path__glow-1"></div>
+												<div class="anim-top-robot-path__glow-2"></div>
+												<div class="anim-top-robot-path__glow-3"></div>
+												<div class="anim-top-robot-path__glow-4"></div>
+												<div class="anim-top-robot-path__glow-5"></div>
+												<div class="anim-top-robot-path__glow-6"></div>
+												<div class="anim-top-robot-path__glow-7"></div>
+												<div class="anim-top-robot-path__glow-8"></div>
+												<div class="anim-top-robot-path__glow-9"></div>
+												<div class="anim-top-robot-path__glow-10"></div>
+												<div class="anim-top-robot-path__glow-11"></div>
+												<div class="anim-top-robot-path__glow-12"></div>
+												<div class="anim-top-robot-path__glow-13"></div>
+												<div class="anim-top-robot-path__glow-14"></div>
+												<div class="anim-top-robot-path__glow-15"></div>
+												<div class="anim-top-robot-path__glow-16"></div>
+												<div class="anim-top-robot-path__glow-17"></div>
+												<div class="anim-top-robot-path__glow-18"></div>
+												<div class="anim-top-robot-path__glow-19"></div>
+												<div class="anim-top-robot-path__glow-20"></div>
+												<div class="anim-top-robot-path__glow-21"></div>
+												<div class="anim-top-robot-path__glow-22"></div>
+												<div class="anim-top-robot-path__glow-23"></div>
+												<div class="anim-top-robot-path__glow-24"></div>
+												<div class="anim-top-robot-path__glow-25"></div>
+												<div class="anim-top-robot-path__glow-26"></div>
+											</div>
+											<div class="animate-robot__anim-left-robot-path">
+												<div class="anim-left-robot-path__glow-1"></div>
+												<div class="anim-left-robot-path__glow-2"></div>
+												<div class="anim-left-robot-path__glow-3"></div>
+												<div class="anim-left-robot-path__glow-4"></div>
+												<div class="anim-left-robot-path__glow-5"></div>
+												<div class="anim-left-robot-path__glow-6"></div>
+												<div class="anim-left-robot-path__glow-7"></div>
+											</div>
+											<div class="animate-robot__shadow-robot-path"></div>
+										</div>
+									</div>
+									<svg stroke-width="3px" stroke="#CCBA96" id="robot-path" stroke-dashoffset="1000">
+										<path id="trace"></path>
+									</svg>
+								</div>
+								<div id="card-slide-1" class="steps__card-slide" data-slide-number="1">
+									<div class="steps__slide slide-steps">
+										<div class="slide-steps__items">
+											<div class="slide-steps__top">
+												<div class="slide-steps__step">Step 1</div>
+												<span></span>
+											</div>
+											<div class="slide-steps__bottom">
+												<div class="slide-steps__title">Defining the goals of site development,
+													Conducting research
+												</div>
+												<div class="slide-steps__image">
+													<div class="slide-steps__img-left">
+														<img src="img/icons/stage-1.svg" alt="">
+													</div>
+													<div class="slide-steps__subtitle">At this stage of site creation it is very important to understand why and for whom you develop a web-resource.
+														<br>
+														<br>
+														Without the right goals and objectives you can not get the necessary site or can, but even in the process of creating you will realize that you will not get what you wanted.
+														<br>
+														<br>
+														It is also important to research your competitors and compiling a scheme: what functionality they provide to users, what design and structure have.
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="card-slide-2" class="steps__card-slide" data-slide-number="2">
+									<div class="steps__slide slide-steps">
+										<div class="slide-steps__items">
+											<div class="slide-steps__top">
+												<div class="slide-steps__step">Step 2</div>
+												<span></span>
+											</div>
+											<div class="slide-steps__bottom">
+												<div class="slide-steps__title">Development of the technical assignment</div>
+												<div class="slide-steps__image">
+													<div class="slide-steps__img">
+														<img src="img/icons/stage-2.svg" alt="">
+													</div>
+													<div class="slide-steps__subtitle">The designation of the target customers of the site, as well as the overall mission;
+														<br>
+														<br>
+														Structure in the form of a scheme consisting of the main sections, subsections and an approximate number of pages;
+														<br>
+														<br>
+														Module wishes;
+														<br>
+														<br>
+														Design Description;
+														<br>
+														<br>
+														What technology to use (type of CMS, scripting libraries, will there be a mobile version, etc.);
+														<br>
+														<br>
+														The procedure for providing, processing or creating graphic and textual information;
+														<br>
+														<br>
+														Technical requirements for the site;
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="card-slide-3" class="steps__card-slide" data-slide-number="3">
+									<div class="steps__slide slide-steps">
+										<div class="slide-steps__items">
+											<div class="slide-steps__top">
+												<div class="slide-steps__step">Step 3</div>
+												<span></span>
+											</div>
+											<div class="slide-steps__bottom">
+												<div class="slide-steps__title">Creation of site design layout</div>
+												<div class="slide-steps__image">
+													<div class="slide-steps__img-left">
+														<img src="img/icons/stage-3.svg" alt="">
+													</div>
+													<div class="slide-steps__subtitle">Providing an agreed number of different concepts for the main page layout;
+														<br>
+														<br>
+														Finalization and coordination of the selected version of the concept;
+														<br>
+														<br>
+														Creating layouts of internal pages (categories, goods / services, contacts, etc.);
+														<br>
+														<br>
+														Finalizing and approving each of the typical pages;
+														<br>
+														<br>
+														Visual content (banners, photos, illustrations);
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="card-slide-4" class="steps__card-slide" data-slide-number="4">
+									<div class="steps__slide slide-steps">
+										<div class="slide-steps__items">
+											<div class="slide-steps__top">
+												<div class="slide-steps__step">Step 4</div>
+												<span></span>
+											</div>
+											<div class="slide-steps__bottom">
+												<div class="slide-steps__title">Printed by</div>
+												<div class="slide-steps__image">
+													<div class="slide-steps__img">
+														<img src="img/icons/stage-4.svg" alt="">
+													</div>
+													<div class="slide-steps__subtitle">At this stage there is purely technical work by our layout designer and programmer:
+														<br>
+														<br>
+														"Understandable" code - the smaller and more competent the code is, the faster the site will load.
+														Validity (correctness) - allows a third-party specialist to easily deal with the code.
+														Cross-browser layout (Cross-browser) - adequate display of the site in all kinds of browsers (IE, Chrome, Firefox, Opera, etc.).
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="card-slide-5" class="steps__card-slide" data-slide-number="5">
+									<div class="steps__slide slide-steps">
+										<div class="slide-steps__items">
+											<div class="slide-steps__top">
+												<div class="slide-steps__step">Step 5</div>
+												<span></span>
+											</div>
+											<div class="slide-steps__bottom">
+												<div class="slide-steps__title">Implementation</div>
+												<div class="slide-steps__image">
+													<div class="slide-steps__img-left">
+														<img src="img/icons/stage-5.svg" alt="">
+													</div>
+													<div class="slide-steps__subtitle">CMS - a site management system, which includes an administrative panel, which, in turn, has the functions of managing the content on the site. Content through the admin panel is loaded very simply, like a Word document. Stretch includes configuring the layout under the parameters of the engine, the CSS itself and the path to the modules of the engine in HTML.
+														<br>
+														<br>
+														As a result of these several stages of work we will get a fully working site, but without any content.
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="card-slide-6" class="steps__card-slide" data-slide-number="6">
+									<div class="steps__slide slide-steps">
+										<div class="slide-steps__items">
+											<div class="slide-steps__top">
+												<div class="slide-steps__step">Step 6</div>
+												<span></span>
+											</div>
+											<div class="slide-steps__bottom">
+												<div class="slide-steps__title">Site content</div>
+												<div class="slide-steps__image">
+													<div class="slide-steps__img">
+														<img src="img/icons/stage-6.svg" alt="">
+													</div>
+													<div class="slide-steps__subtitle">Without text and photos, the site has a rather conventional value. The customer provides the information and fills the site with text and pictures or we do it (depending on the agreement). If the customer does it himself, he is provided with instructions for working with CMS.
+														<br>
+														<br>
+														All materials are best given to write a professional copywriter, as this text will read the customers.
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="card-slide-7" class="steps__card-slide" data-slide-number="7">
+									<div class="steps__slide slide-steps">
+										<div class="slide-steps__items">
+											<div class="slide-steps__top">
+												<div class="slide-steps__step">Step 7</div>
+												<span></span>
+											</div>
+											<div class="slide-steps__bottom">
+												<div class="slide-steps__title">Testing</div>
+												<div class="slide-steps__image">
+													<div class="slide-steps__img-left">
+														<img src="img/icons/stage-7.svg" alt="">
+													</div>
+													<div class="slide-steps__subtitle">
+														Without text and photos, the site has a rather conventional value. The customer provides the information and fills the site with text and pictures or we do it (depending on the agreement). If the customer does it himself, he is provided with instructions for working with CMS.
+														<br>
+														<br>
+														All materials are best given to write a professional copywriter, as this text will read the customers.
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="card-slide-8" class="steps__card-slide" data-slide-number="8">
+									<div class="steps__slide slide-steps">
+										<div class="slide-steps__items">
+											<div class="slide-steps__top">
+												<div class="slide-steps__step">Step 8</div>
+												<span></span>
+											</div>
+											<div class="slide-steps__bottom">
+												<div class="slide-steps__title">Optimizing</div>
+												<div class="slide-steps__image">
+													<div class="slide-steps__img">
+														<img src="img/icons/stage-8.svg" alt="">
+													</div>
+													<div class="slide-steps__subtitle">
+														Without text and photos, the site has a rather conventional value. The customer provides the information and fills the site with text and pictures or we do it (depending on the agreement). If the customer does it himself, he is provided with instructions for working with CMS.
+														<br>
+														<br>
+														All materials are best given to write a professional copywriter, as this text will read the customers.
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="card-slide-9" class="steps__card-slide" data-slide-number="9">
+									<div class="steps__slide slide-steps">
+										<div class="slide-steps__items">
+											<div class="slide-steps__top">
+												<div class="slide-steps__step">Step 9</div>
+												<span></span>
+											</div>
+											<div class="slide-steps__bottom">
+												<div class="slide-steps__title">Launching the site</div>
+												<div class="slide-steps__image">
+													<div class="slide-steps__img-left">
+														<img src="img/icons/stage-9.svg" alt="">
+													</div>
+													<div class="slide-steps__subtitle">
+														The contractor moves the project to hosting, the customer provides or buys together with the contractor domain name (site address) and the site is successfully available on the network.
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="card-slide-10" class="steps__card-slide" data-slide-number="10">
+									<div class="steps__slide slide-steps">
+										<div class="slide-steps__items">
+											<div class="slide-steps__top">
+												<div class="slide-steps__step">Step 10</div>
+												<span></span>
+											</div>
+											<div class="slide-steps__bottom">
+												<div class="slide-steps__title">Promotion and advertising</div>
+												<div class="slide-steps__image">
+													<div class="slide-steps__img">
+														<img src="img/icons/stage-10.svg" alt="">
+													</div>
+													<div class="slide-steps__subtitle">
+														The contractor moves the project to hosting, the customer provides or buys together with the contractor domain name (site address) and the site is successfully available on the network.
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="steps__sector-brief">
+									<div class="steps__slide slide-steps">
+										<div class="slide-steps__brief brief">
+											<div class="brief__title">
+												Tell us about your project
+											</div>
+											<div class="brief__subtitle">
+												And we will create the best business tool for you
+											</div>
+											<a href="#" class="brief__button button"><span>Fill out the form</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="steps__pagination pagination-steps">
+							<ul class="pagination-steps__list">
+								<li><a href="#" data-goto-speed="1000" data-goto="#card-slide-1" class="pagination-steps__item" data-slide-number="1">1</a></li>
+								<li><a href="#" data-goto-speed="1000" data-goto="#card-slide-2" class="pagination-steps__item" data-slide-number="2">2</a></li>
+								<li><a href="#" data-goto-speed="1000" data-goto="#card-slide-3" class="pagination-steps__item" data-slide-number="3">3</a></li>
+								<li><a href="#" data-goto-speed="1000" data-goto="#card-slide-4" class="pagination-steps__item" data-slide-number="4">4</a></li>
+								<li><a href="#" data-goto-speed="1000" data-goto="#card-slide-5" class="pagination-steps__item" data-slide-number="5">5</a></li>
+								<li><a href="#" data-goto-speed="1000" data-goto="#card-slide-6" class="pagination-steps__item" data-slide-number="6">6</a></li>
+								<li><a href="#" data-goto-speed="1000" data-goto="#card-slide-7" class="pagination-steps__item" data-slide-number="7">7</a></li>
+								<li><a href="#" data-goto-speed="1000" data-goto="#card-slide-8" class="pagination-steps__item" data-slide-number="8">8</a></li>
+								<li><a href="#" data-goto-speed="1000" data-goto="#card-slide-9" class="pagination-steps__item" data-slide-number="9">9</a></li>
+								<li><a href="#" data-goto-speed="1000" data-goto="#card-slide-10" class="pagination-steps__item" data-slide-number="10">10</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="sectors__slide portfolio">
+					<div class="portfolio__container">
+						<div class="portfolio__slide-content">
+							<h3 data-watch data-watch-once class="portfolio__title">
+								Por
+								<span>tf</span>
+								olio
+							</h3>
+							<div data-watch data-watch-once class="portfolio__filters">
+								<div class="portfolio__filters-body">
+									<div class="portfolio__filters-list-wrap">
+										<button data-filter="1" class="portfolio__filters-item _active">all jobs</button>
+										<button data-filter="2" class="portfolio__filters-item">news sites</button>
+										<button data-filter="3" class="portfolio__filters-item">online-stores</button>
+										<button data-filter="4" class="portfolio__filters-item">promotion</button>
+										<button data-filter="5" class="portfolio__filters-item">design</button>
+									</div>
+									<div class="portfolio__filters-toggle-wrap">
+										<div class="portfolio__side-desktop _active">
+											<span class="portfolio__filters-desktop-text">desktop</span>
+											<span class="portfolio__filters-desktop-icon _icon-desktop"></span>
+										</div>
+										<div class="portfolio__toggle">
+											<input type="checkbox" name="toggle" id="toggle-button" class="portfolio__toggle-button">
+											<label for="toggle-button" class="portfolio__toggle-button-text"></label>
+										</div>
+										<div class="portfolio__side-mobile">
+											<span class="portfolio__filters-mobile-icon _icon-mobile">
+											</span>
+											<span class="portfolio__filters-mobile-text">mobile</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-watch data-watch-once class="portfolio__content">
+								<div class="portfolio__desktop desktop-portfolio">
+									<div class="desktop-portfolio__image-cover-desktop">
+										<picture><source srcset="img/imac.webp" type="image/webp"><img src="img/imac.png" alt=""></picture>
+									</div>
+									<div class="desktop-portfolio__body">
+										<div class="desktop-portfolio__desktop-swiper swiper">
+											<div class="desktop-portfolio__desktop-wrapper swiper-wrapper ">
+												<div class="portfolio-slide desktop-portfolio__desktop-slide swiper-slide" data-filter="2">
+													<div class="portfolio-slide__body">
+														<div class="portfolio-slide__header">
+															<div class="portfolio-slide__title-desktop">adidas</div>
+															<div class="portfolio-slide__subtitle">Corporate website</div>
+														</div>
+														<div class="portfolio-slide__description">
+															Rebranding the world-famous sportswear manufacturer adidas
+														</div>
+														<div class="portfolio-slide__footer">
+															<a href="#" class="portfolio-slide__link">
+																<span class="portfolio-slide__link-text">Watch the project</span>
+																<div class="portfolio-slide__link-icon _icon-arrow-portfolio"></div>
+															</a>
+															<div class="portfolio-slide__delimiter"></div>
+														</div>
+													</div>
+													<div class="portfolio-slide__background">
+														<picture><source srcset="img/portfolio-image.webp" type="image/webp"><img src="img/portfolio-image.png" alt=""></picture>
+													</div>
+													<div class="portfolio-slide__foreground">
+													</div>
+												</div>
+												<div class="portfolio-slide desktop-portfolio__desktop-slide swiper-slide" data-filter="2">
+													<div class="portfolio-slide__body">
+														<div class="portfolio-slide__header">
+															<div class="portfolio-slide__title-desktop">adidas2</div>
+															<div class="portfolio-slide__subtitle">Corporate website</div>
+														</div>
+														<div class="portfolio-slide__description">
+															Rebranding the world-famous sportswear manufacturer adidas
+														</div>
+														<div class="portfolio-slide__footer">
+															<a href="#" class="portfolio-slide__link">
+																<span class="portfolio-slide__link-text">Watch the project</span>
+																<div class="portfolio-slide__link-icon _icon-arrow-portfolio"></div>
+															</a>
+															<div class="portfolio-slide__delimiter"></div>
+														</div>
+													</div>
+													<div class="portfolio-slide__background">
+														<picture><source srcset="img/portfolio-image.webp" type="image/webp"><img src="img/portfolio-image.png" alt=""></picture>
+													</div>
+													<div class="portfolio-slide__foreground">
+													</div>
+												</div>
+												<div class="portfolio-slide desktop-portfolio__desktop-slide swiper-slide" data-filter="3">
+													<div class="portfolio-slide__body">
+														<div class="portfolio-slide__header">
+															<div class="portfolio-slide__title-desktop">adidas3</div>
+															<div class="portfolio-slide__subtitle">Corporate website</div>
+														</div>
+														<div class="portfolio-slide__description">
+															Rebranding the world-famous sportswear manufacturer adidas
+														</div>
+														<div class="portfolio-slide__footer">
+															<a href="#" class="portfolio-slide__link">
+																<span class="portfolio-slide__link-text">Watch the project</span>
+																<div class="portfolio-slide__link-icon _icon-arrow-portfolio"></div>
+															</a>
+															<div class="portfolio-slide__delimiter"></div>
+														</div>
+													</div>
+													<div class="portfolio-slide__background">
+														<picture><source srcset="img/portfolio-image.webp" type="image/webp"><img src="img/portfolio-image.png" alt=""></picture>
+													</div>
+													<div class="portfolio-slide__foreground">
+													</div>
+												</div>
+												<div class="portfolio-slide desktop-portfolio__desktop-slide swiper-slide" data-filter="4">
+													<div class="portfolio-slide__body">
+														<div class="portfolio-slide__header">
+															<div class="portfolio-slide__title-desktop">adidas4</div>
+															<div class="portfolio-slide__subtitle">Corporate website</div>
+														</div>
+														<div class="portfolio-slide__description">
+															Rebranding the world-famous sportswear manufacturer adidas
+														</div>
+														<div class="portfolio-slide__footer">
+															<a href="#" class="portfolio-slide__link">
+																<span class="portfolio-slide__link-text">Watch the project</span>
+																<div class="portfolio-slide__link-icon _icon-arrow-portfolio"></div>
+															</a>
+															<div class="portfolio-slide__delimiter"></div>
+														</div>
+													</div>
+													<div class="portfolio-slide__background">
+														<picture><source srcset="img/portfolio-image.webp" type="image/webp"><img src="img/portfolio-image.png" alt=""></picture>
+													</div>
+													<div class="portfolio-slide__foreground">
+													</div>
+												</div>
+												<div class="portfolio-slide desktop-portfolio__desktop-slide swiper-slide" data-filter="1">
+													<div class="portfolio-slide__body">
+														<div class="portfolio-slide__header">
+															<div class="portfolio-slide__title-desktop">adidas5</div>
+															<div class="portfolio-slide__subtitle">Corporate website</div>
+														</div>
+														<div class="portfolio-slide__description">
+															Rebranding the world-famous sportswear manufacturer adidas
+														</div>
+														<div class="portfolio-slide__footer">
+															<a href="#" class="portfolio-slide__link">
+																<span class="portfolio-slide__link-text">Watch the project</span>
+																<div class="portfolio-slide__link-icon _icon-arrow-portfolio"></div>
+															</a>
+															<div class="portfolio-slide__delimiter"></div>
+														</div>
+													</div>
+													<div class="portfolio-slide__background">
+														<picture><source srcset="img/portfolio-image.webp" type="image/webp"><img src="img/portfolio-image.png" alt=""></picture>
+													</div>
+													<div class="portfolio-slide__foreground">
+													</div>
+												</div>
+												<div class="portfolio-slide desktop-portfolio__desktop-slide swiper-slide" data-filter="5">
+													<div class="portfolio-slide__body">
+														<div class="portfolio-slide__header">
+															<div class="portfolio-slide__title-desktop">adidas6</div>
+															<div class="portfolio-slide__subtitle">Corporate website</div>
+														</div>
+														<div class="portfolio-slide__description">
+															Rebranding the world-famous sportswear manufacturer adidas
+														</div>
+														<div class="portfolio-slide__footer">
+															<a href="#" class="portfolio-slide__link">
+																<span class="portfolio-slide__link-text">Watch the project</span>
+																<div class="portfolio-slide__link-icon _icon-arrow-portfolio"></div>
+															</a>
+															<div class="portfolio-slide__delimiter"></div>
+														</div>
+													</div>
+													<div class="portfolio-slide__background">
+														<picture><source srcset="img/portfolio-image.webp" type="image/webp"><img src="img/portfolio-image.png" alt=""></picture>
+													</div>
+													<div class="portfolio-slide__foreground">
+													</div>
+												</div>
+											</div>
+											<div class="portfolio__arrows">
+												<button class="portfolio__arrow-prev portfolio__arrow-prev-desktop">
+													<span class="portfolio__icon _icon-arrow"></span>
+												</button>
+												<button class="portfolio__arrow-next portfolio__arrow-next-desktop">
+													<span class="portfolio__icon _icon-arrow"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio__mobile mobile-portfolio _hidden">
+									<div class="mobile-portfolio__image-cover-mobile">
+										<picture><source srcset="img/iphone.webp" type="image/webp"><img src="img/iphone.png" alt=""></picture>
+									</div>
+									<div class="mobile-portfolio__body">
+										<div class="mobile-portfolio__mobile-swiper swiper">
+											<div class="mobile-portfolio__mobile-wrapper swiper-wrapper">
+												<div class="portfolio-slide mobile-portfolio__mobile-slide swiper-slide" data-filter="2">
+													<div class="portfolio-slide__body">
+														<div class="portfolio-slide__header">
+															<div class="portfolio-slide__title-mobile">adidas</div>
+															<div class="portfolio-slide__subtitle">Corporate website</div>
+														</div>
+														<div class="portfolio-slide__description">
+															Rebranding the world-famous sportswear manufacturer adidas
+														</div>
+														<div class="portfolio-slide__footer">
+															<a href="#" class="portfolio-slide__link">
+																<span class="portfolio-slide__link-text">Watch the project</span>
+																<div class="portfolio-slide__link-icon _icon-arrow-portfolio"></div>
+															</a>
+															<div class="portfolio-slide__delimiter"></div>
+														</div>
+													</div>
+													<div class="portfolio-slide__background">
+														<picture><source srcset="img/mobile-image-porfolio.webp" type="image/webp"><img src="img/mobile-image-porfolio.png" alt=""></picture>
+													</div>
+													<div class="portfolio-slide__foreground">
+													</div>
+												</div>
+												<div class="portfolio-slide mobile-portfolio__mobile-slide swiper-slide" data-filter="2">
+													<div class="portfolio-slide__body">
+														<div class="portfolio-slide__header">
+															<div class="portfolio-slide__title-mobile">adidas2</div>
+															<div class="portfolio-slide__subtitle">Corporate website</div>
+														</div>
+														<div class="portfolio-slide__description">
+															Rebranding the world-famous sportswear manufacturer adidas
+														</div>
+														<div class="portfolio-slide__footer">
+															<a href="#" class="portfolio-slide__link">
+																<span class="portfolio-slide__link-text">Watch the project</span>
+																<div class="portfolio-slide__link-icon _icon-arrow-portfolio"></div>
+															</a>
+															<div class="portfolio-slide__delimiter"></div>
+														</div>
+													</div>
+													<div class="portfolio-slide__background">
+														<picture><source srcset="img/mobile-image-porfolio.webp" type="image/webp"><img src="img/mobile-image-porfolio.png" alt=""></picture>
+													</div>
+													<div class="portfolio-slide__foreground">
+													</div>
+												</div>
+												<div class="portfolio-slide mobile-portfolio__mobile-slide swiper-slide" data-filter="3">
+													<div class="portfolio-slide__body">
+														<div class="portfolio-slide__header">
+															<div class="portfolio-slide__title-mobile">adidas3</div>
+															<div class="portfolio-slide__subtitle">Corporate website</div>
+														</div>
+														<div class="portfolio-slide__description">
+															Rebranding the world-famous sportswear manufacturer adidas
+														</div>
+														<div class="portfolio-slide__footer">
+															<a href="#" class="portfolio-slide__link">
+																<span class="portfolio-slide__link-text">Watch the project</span>
+																<div class="portfolio-slide__link-icon _icon-arrow-portfolio"></div>
+															</a>
+															<div class="portfolio-slide__delimiter"></div>
+														</div>
+													</div>
+													<div class="portfolio-slide__background">
+														<picture><source srcset="img/mobile-image-porfolio.webp" type="image/webp"><img src="img/mobile-image-porfolio.png" alt=""></picture>
+													</div>
+													<div class="portfolio-slide__foreground">
+													</div>
+												</div>
+												<div class="portfolio-slide mobile-portfolio__mobile-slide swiper-slide" data-filter="4">
+													<div class="portfolio-slide__body">
+														<div class="portfolio-slide__header">
+															<div class="portfolio-slide__title-mobile">adidas4</div>
+															<div class="portfolio-slide__subtitle">Corporate website</div>
+														</div>
+														<div class="portfolio-slide__description">
+															Rebranding the world-famous sportswear manufacturer adidas
+														</div>
+														<div class="portfolio-slide__footer">
+															<a href="#" class="portfolio-slide__link">
+																<span class="portfolio-slide__link-text">Watch the project</span>
+																<div class="portfolio-slide__link-icon _icon-arrow-portfolio"></div>
+															</a>
+															<div class="portfolio-slide__delimiter"></div>
+														</div>
+													</div>
+													<div class="portfolio-slide__background">
+														<picture><source srcset="img/mobile-image-porfolio.webp" type="image/webp"><img src="img/mobile-image-porfolio.png" alt=""></picture>
+													</div>
+													<div class="portfolio-slide__foreground">
+													</div>
+												</div>
+												<div class="portfolio-slide mobile-portfolio__mobile-slide swiper-slide" data-filter="1">
+													<div class="portfolio-slide__body">
+														<div class="portfolio-slide__header">
+															<div class="portfolio-slide__title-mobile">adidas5</div>
+															<div class="portfolio-slide__subtitle">Corporate website</div>
+														</div>
+														<div class="portfolio-slide__description">
+															Rebranding the world-famous sportswear manufacturer adidas
+														</div>
+														<div class="portfolio-slide__footer">
+															<a href="#" class="portfolio-slide__link">
+																<span class="portfolio-slide__link-text">Watch the project</span>
+																<div class="portfolio-slide__link-icon _icon-arrow-portfolio"></div>
+															</a>
+															<div class="portfolio-slide__delimiter"></div>
+														</div>
+													</div>
+													<div class="portfolio-slide__background">
+														<picture><source srcset="img/mobile-image-porfolio.webp" type="image/webp"><img src="img/mobile-image-porfolio.png" alt=""></picture>
+													</div>
+													<div class="portfolio-slide__foreground">
+													</div>
+												</div>
+												<div class="portfolio-slide mobile-portfolio__mobile-slide swiper-slide" data-filter="5">
+													<div class="portfolio-slide__body">
+														<div class="portfolio-slide__header">
+															<div class="portfolio-slide__title-mobile">adidas6</div>
+															<div class="portfolio-slide__subtitle">Corporate website</div>
+														</div>
+														<div class="portfolio-slide__description">
+															Rebranding the world-famous sportswear manufacturer adidas
+														</div>
+														<div class="portfolio-slide__footer">
+															<a href="#" class="portfolio-slide__link">
+																<span class="portfolio-slide__link-text">Watch the project</span>
+																<div class="portfolio-slide__link-icon _icon-arrow-portfolio"></div>
+															</a>
+															<div class="portfolio-slide__delimiter"></div>
+														</div>
+													</div>
+													<div class="portfolio-slide__background">
+														<picture><source srcset="img/mobile-image-porfolio.webp" type="image/webp"><img src="img/mobile-image-porfolio.png" alt=""></picture>
+													</div>
+													<div class="portfolio-slide__foreground">
+													</div>
+												</div>
+											</div>
+											<div class="portfolio__arrows-mobile">
+												<button class="portfolio__arrow-prev portfolio__arrow-prev-mobile">
+													<span class="portfolio__icon _icon-arrow"></span>
+												</button>
+												<button class="portfolio__arrow-next portfolio__arrow-next-mobile">
+													<span class="portfolio__icon _icon-arrow"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a data-watch data-watch-once href="#" class="portfolio__button button">
+								<span>see all projects</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="sectors__slide client">
+					<div class="client__container">
+						<div class="client__content">
+							<h2 data-watch data-watch-once>our customers.</h2>
+							<h3 data-watch data-watch-once>Proud to work with people who love their business as much as we do<br>
+								and are happy to be their digital partner
+							</h3>
+							<div data-watch data-watch-once class="client__body client-item">
+								<div class="client-item__column">
+									<div class="client-item__image">
+										<picture><source srcset="img/clients.webp" type="image/webp"><img src="img/clients.png" alt=""></picture>
+									</div>
+								</div>
+								<div class="client-item__column">
+									<div class="client-item__image">
+										<picture><source srcset="img/clients.webp" type="image/webp"><img src="img/clients.png" alt=""></picture>
+									</div>
+								</div>
+								<div class="client-item__column">
+									<div class="client-item__image">
+										<picture><source srcset="img/clients.webp" type="image/webp"><img src="img/clients.png" alt=""></picture>
+									</div>
+								</div>
+								<div class="client-item__column">
+									<div class="client-item__image">
+										<picture><source srcset="img/clients.webp" type="image/webp"><img src="img/clients.png" alt=""></picture>
+									</div>
+								</div>
+								<div class="client-item__column">
+									<div class="client-item__image">
+										<picture><source srcset="img/clients.webp" type="image/webp"><img src="img/clients.png" alt=""></picture>
+									</div>
+								</div>
+								<div class="client-item__column">
+									<div class="client-item__image">
+										<picture><source srcset="img/clients.webp" type="image/webp"><img src="img/clients.png" alt=""></picture>
+									</div>
+								</div>
+								<div class="client-item__column">
+									<div class="client-item__image">
+										<picture><source srcset="img/clients.webp" type="image/webp"><img src="img/clients.png" alt=""></picture>
+									</div>
+								</div>
+								<div class="client-item__column">
+									<div class="client-item__image">
+										<picture><source srcset="img/clients.webp" type="image/webp"><img src="img/clients.png" alt=""></picture>
+									</div>
+								</div>
+								<div class="client-item__column">
+									<div class="client-item__image">
+										<picture><source srcset="img/clients.webp" type="image/webp"><img src="img/clients.png" alt=""></picture>
+									</div>
+								</div>
+								<div class="client-item__column">
+									<div class="client-item__image">
+										<picture><source srcset="img/clients.webp" type="image/webp"><img src="img/clients.png" alt=""></picture>
+									</div>
+								</div>
+								<div class="client-item__column">
+									<div class="client-item__image">
+										<picture><source srcset="img/clients.webp" type="image/webp"><img src="img/clients.png" alt=""></picture>
+									</div>
+								</div>
+								<div class="client-item__column">
+									<div class="client-item__image">
+										<picture><source srcset="img/clients.webp" type="image/webp"><img src="img/clients.png" alt=""></picture>
+									</div>
+								</div>
+								<div class="client-item__column">
+									<div class="client-item__image">
+										<picture><source srcset="img/clients.webp" type="image/webp"><img src="img/clients.png" alt=""></picture>
+									</div>
+								</div>
+								<div class="client-item__column">
+									<div class="client-item__image">
+										<picture><source srcset="img/clients.webp" type="image/webp"><img src="img/clients.png" alt=""></picture>
+									</div>
+								</div>
+								<div class="client-item__column">
+									<div class="client-item__image">
+										<picture><source srcset="img/clients.webp" type="image/webp"><img src="img/clients.png" alt=""></picture>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sectors__slide project">
+					<div class="project__container">
+						<div class="project__content">
+							<h3 data-watch data-watch-once><span class="project__line-1"></span>discuss the project.<span class="project__line-2"></span></h3>
+							<h4 data-watch data-watch-once>All cool projects once started with filling out this form</h4>
+							<form id="form" action="#" class="project__form form-project">
+								<div data-watch data-watch-once class="form-project__content">
+									<div class="form-project__left">
+										<div class="form-project__inputs">
+											<input id="input-4" data-required data-validate tabindex="1" type="text" name="form[]" data-value="" autocomplete="off" class="form-project__input" placeholder="">
+											<label class="form-project__label" for="input-4">
+												<span>name*</span>
+											</label>
+											<svg class="form-project__graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+												<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+											</svg>
+										</div>
+										<div class="form-project__inputs">
+											<input id="input-5" data-required data-validate tabindex="2" type="tel" name="form[]" data-value="" autocomplete="off" class="form-project__input" placeholder="">
+											<label class="form-project__label" for="input-5">
+												<span>phone*</span>
+											</label>
+											<svg class="form-project__graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+												<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+											</svg>
+										</div>
+										<div class="form-project__inputs">
+											<input id="input-6" data-validate tabindex="3" data-required="email" type="email" name="form[]" data-value="" autocomplete="off" class="form-project__input" placeholder="">
+											<label class="form-project__label" for="input-6">
+												<span>e-mail*</span>
+											</label>
+											<svg class="form-project__graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+												<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+											</svg>
+										</div>
+									</div>
+									<div class="form-project__right">
+										<div class="form-project__inputs-textarea">
+											<div class="form-project__wrapper">
+												<div class="form-project__back"></div>
+												<div class="form-project__layer"></div>
+												<textarea id="input-6" autocomplete="off" name="form[]" data-value="" data-error="Ошибка" class="form-project__input-textarea"></textarea>
+												<label class="form-project__label-textarea" for="input-7">
+													<span>share your idea</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<a data-watch data-watch-once href="#" class="form-project__button button"><span>send</span></a>
+						</div>
+						</form>
+						<div class="project__description">
+							<h3 data-watch data-watch-once>Coder Troop Digital Agency</h3>
+							<p data-watch data-watch-once>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit aliquid suscipit debitis sapiente ea, obcaecati repellendus autem id tenetur, ratione eos et vel esse omnis quis necessitatibus vero officia exercitationem.</p>
+							<h4 data-watch data-watch-once>Title 1</h4>
+							<p data-watch data-watch-once>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quos. Reprehenderit debitis aliquid, quo perferendis, repudiandae eaque aliquam obcaecati deleniti natus ea error quae odio non ipsum ad sunt? Ducimus!</p>
+							<h4 data-watch data-watch-once>Title 1</h4>
+							<p data-watch data-watch-once>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At veritatis officia velit dolorem odit laborum quasi consequatur libero suscipit amet. Dolores velit aliquam accusamus voluptas temporibus eos nobis qui aspernatur!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div class="chat-widget">
+			<div class="chat-widget__body _icon-close">
+				<div class="chat-widget__line-holder">
+					<div class="chat-widget__icons">
+						<div class="chat-widget__icon"><img src="img/icons/logo.svg" alt=""></div>
+						<div class="chat-widget__icon">Contact<br>
+							<span>Us</span>
+						</div>
+						<div class="chat-widget__icon"><img src="img/icons/logo.svg" alt=""></div>
+					</div>
+				</div>
+				<a id="brif-chat-bot" href="" class="chat-widget__chat-bot _icon-brief">
+					<span>fill out the form</span>
+				</a>
+				<a id="viber-chat-bot" href="" class="chat-widget__chat-bot _icon-viber-widget">
+					<span>Viber</span>
+				</a>
+				<a id="telegram-chat-bot" href="" class="chat-widget__chat-bot _icon-telegram">
+					<span>Telegram</span>
+				</a>
+				<a id="phone-chat-bot" href="" class="chat-widget__chat-bot _icon-phone">
+					<span>Contact Us</span>
+				</a>
+			</div>
+			<div class="chat-widget__pulsation"></div>
+			<div class="chat-widget__pulsation"></div>
+		</div>
+		<button onclick="topFunction()" id="myBtn" class="up-button _icon-up-arrow"></button>
+		<footer class="footer">
+			<div class="footer__top top-footer">
+				<div class="top-footer__container">
+					<div class="top-footer__content">
+						<div class="top-footer__logo">
+							<a data-watch data-watch-once href="" class="top-footer__title">
+								<img src="img/icons/footer-logo.svg" alt="">
+							</a>
+							<div data-watch data-watch-once class="top-footer__subtitle">
+								digital agency 25/8/366
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__content">
+				<div class="footer__center center-footer">
+					<div class="center-footer__container">
+						<div data-spollers="480,max" class="center-footer__row">
+							<div class="center-footer__items">
+								<div class="center-footer__column">
+									<div data-spoller class="center-footer__title _icon-arrow">Development</div>
+									<ul>
+										<li>
+											<a href="">Landing - page</a>
+										</li>
+										<li>
+											<a href="">Corporate website</a>
+										</li>
+										<li>
+											<a href="">Online store</a>
+										</li>
+										<li>
+											<a href="">Marketplace</a>
+										</li>
+										<li>
+											<a href="">Mobile application</a>
+										</li>
+										<li>
+											<a href="">Tech support for<br>
+												your site</a>
+										</li>
+									</ul>
+								</div>
+								<div class="center-footer__column">
+									<div data-spoller class="center-footer__title _icon-arrow">Design</div>
+									<ul>
+										<li>
+											<a href="">Website design</a>
+										</li>
+										<li>
+											<a href="">Creating a logo</a>
+										</li>
+										<li>
+											<a href="">Corporate identity</a>
+										</li>
+										<li>
+											<a href="">Advertising creatives,<br>
+												banners</a>
+										</li>
+										<li>
+											<a href="">Branding</a>
+										</li>
+										<li>
+											<a href="">Animation</a>
+										</li>
+									</ul>
+								</div>
+								<div class="center-footer__column">
+									<div data-spoller class="center-footer__title _icon-arrow">Marketing</div>
+									<ul>
+										<li>
+											<a href="">Promotion in search engines<br>
+												engines (SEO)</a>
+										</li>
+										<li>
+											<a href="">Promotion in social networks (SMM)</a>
+										</li>
+										<li>
+											<a href="">Contextual advertising</a>
+										</li>
+									</ul>
+								</div>
+								<div class="center-footer__column">
+									<div data-spoller class="center-footer__title _icon-arrow">Contacts</div>
+									<div class="center-footer__contacts">
+										<div class="center-footer__telephone">
+											<a href="tel:380958360192" class="center-footer__tel">+380958360192</a>
+											<a href="tel:380958360192" class="center-footer__tel">+380958360192</a>
+										</div>
+										<div class="center-footer__social social-center-footer">
+											<div class="social-center-footer__title">Contact Us:</div>
+											<div class="social-center-footer__icons">
+												<a href="" class="social-center-footer__icon _icon-phone"></a>
+												<a href="" class="social-center-footer__icon _icon-telegram"></a>
+												<a href="" class="social-center-footer__icon _icon-viber"></a>
+												<a href="" class="social-center-footer__icon _icon-facebook"></a>
+												<a href="" class="social-center-footer__icon _icon-instagram"></a>
+											</div>
+											<a href="" class="center-footer__email">ctagency@gmail.com</a>
+										</div>
+										<div class="center-footer__rating rating-center-footer">
+											<div class="rating-center-footer__title">Customers appreciate us:</div>
+											<div class="rating-center-footer__rating">
+												<div class="rating-block">
+													<div class="rating__body">
+														<div class="rating__line"></div>
+														<div class="rating__activeline"></div>
+														<div class="rating__stars">
+															<span class="rating__star"></span>
+															<span class="rating__star"></span>
+															<span class="rating__star"></span>
+															<span class="rating__star"></span>
+															<span class="rating__star"></span>
+														</div>
+														<input value="4.85" type="hidden" name="rating">
+													</div>
+													<div class="rating__value">4.85/5 (682)</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom bottom-footer">
+						<div class="bottom-footer__container">
+							<div class="bottom-footer__copy">© «Coder Troop Agency»</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/app.min.js?_v=20250717172901"></script>
+		<script>
+			window.onscroll = function() {
+				scrollFunction();
+			};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					document.getElementById("myBtn").style.display = "block";
+				} else {
+					document.getElementById("myBtn").style.display = "none";
+				}
+			}
+			let upButton = document.querySelector('.up-button');
+
+			function topFunction() {
+				if (upButton) {
+					document.body.scrollTop = 0;
+					document.documentElement.scrollTop = 0;
+				}
+			}
+		</script>
+	</div>
+</body>
+
+</html>
